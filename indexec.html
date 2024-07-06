@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Produt Page</title>
+    <link rel="stylesheet" href="styleec.css">
+</head>
+<body>
+    <div class="contaner">
+        <div class="product">
+            <div class="all-images">
+            <div class="small-images">
+                <img src="shirt1.png" onclick="clickimg(this)">
+                <img src="shirt2.png" onclick="clickimg(this)">
+                <img src="shirt3.png" onclick="clickimg(this)">
+            </div>
+            <div class="main-image">
+                <img src="shirt1.png" id="imagebox">
+            </div>
+        </div>
+            <div class="details">
+                <h1> Men Slim Fit Formal Shirt with Spread Collar</h1>
+                <h2>&#8377; 1,050</h2>
+                <strike>&#8377; 1,500</strike>
+                <h3>30% OFF</h3>
+                <p>Slim Fit </p><br>
+                <p>Package contains: 1 shirt</p>
+                <p>Machine wash cold</p>
+                <p>65% cotton, 35% polyester</p>
+                </p>Product Code: 469514981_darkblue</p>
+                <form>
+                    <div class="size-select">
+                        <p>size</p><br>
+                        <label for="small">
+                            <input type="radio" name="size"id="small">
+                            <span>S</span>
+                        </label>
+                        <label for="medium">
+                            <input type="radio" name="size"id="medium">
+                            <span>M</span>
+                        </label>
+                        <label for="large">
+                            <input type="radio" name="size"id="large">
+                            <span>L</span>
+                        </label>
+                        <label for="x-large">
+                            <input type="radio" name="size"id="x-large">
+                            <span>XL</span>
+                        </label>
+                        <label for="xx-large">
+                            <input type="radio" name="size"id="xx-large">
+                            <span>XXL</span>
+                        </label>
+                    </div>
+                    <div class="colour-select">
+                        <p>colour</p>
+                        <label for="blue">
+                            <input type="radio" name="colour" id="blue">
+                            <span class="colour-1"></span>
+                        </label>
+                        <label for="red">
+                            <input type="radio" name="colour" id="red">
+                            <span class="colour-2"></span>
+                        </label>
+                        <label for="Grey">
+                            <input type="radio" name="colour" id="Grey">
+                            <span class="colour-3"></span>
+                        </label>
+                        <label for="Black">
+                            <input type="radio" name="colour" id="Black">
+                            <span class="colour-4"></span>
+                        </label>
+                    </div>
+                    <div class="quantity-select">
+                        <p>quantity</p>
+                        <input type="number" value="1">
+                    </div>
+                    <div>
+                        <button>Buy Now</button><br>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function clickimg(smallimg) {
+            var mainimg= document.getElementById("imagebox");
+            mainimg.src = smallimg.src
+            
+        }
+
+    </script>
+</body>
+</html>
